@@ -1,0 +1,8 @@
+# Ignore env file
+.env
+
+# operating system files
+.DS_STORE
+
+# databases
+*.db
