@@ -9,6 +9,6 @@ class Flat
   end
 
   def to_s
-    "#{@title[0..40]}... - #{@price} € | #{@rooms} habs"
+    "#{@price} € | #{@rooms} habs - #{@title}"
   end
 end
