@@ -6,7 +6,7 @@ gem 'nokogiri'
 # Repository
 gem 'sqlite3'
 
-#Mailer
+# Mailer
 gem 'mail'
 
 # Development
