@@ -1,7 +1,5 @@
-require 'nokogiri'
 require 'open-uri'
 require_relative 'flat'
-
 
 SITE_URL = "https://www.habitaclia.com/alquiler-viviendas-particulares-distrito_ciutat_vella-barcelona-{NUM}.htm"
 

@@ -1,5 +1,3 @@
-require 'sqlite3'
-
 class Repository
   def initialize(attrs = {})
     @db_file = attrs[:db_file]
