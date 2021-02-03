@@ -20,7 +20,6 @@ class Repository
       INSERT INTO flats (title, link, price, rooms) VALUES
     SQL
     values_query = new_flats.map { |flat| flat_to_value_string(flat) }.join(', ')
-    p query + values_query
     @db.execute(query + values_query)
   end
 

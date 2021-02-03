@@ -11,6 +11,7 @@ gem 'mail'
 
 # Utils
 gem 'rake'
+gem 'dotenv'
 
 # Development
 gem 'pry-nav'
