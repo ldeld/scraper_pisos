@@ -3,7 +3,7 @@ class Mailer
   def initialize(attrs = {})
     @test_run = attrs[:test_run]
     # Send to self if test run
-    @recipients = @test_run ? FROM_ADDRESS : attrs[:recipients]
+    @recipients = $TEST_RUN ? FROM_ADDRESS : attrs[:recipients]
   end
 
   def send_new_flats_mail(flats)
@@ -20,6 +20,7 @@ class Mailer
     mail.from    = FROM_ADDRESS
     mail.to      = @recipients
     mail.subject = 'Nuevos apartamentos!'
+    mail.delivery_method :sendmail
     mail.html_part do
       content_type 'text/html; charset=UTF-8'
       body mail_body
